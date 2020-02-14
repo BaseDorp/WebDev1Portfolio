@@ -1,0 +1,60 @@
+p 
+{
+    background-color: blue;
+    width: 50px;
+    height: 100px;
+}
+
+a
+{
+    color: lightcoral;
+}
+
+#greenBox
+{
+    /* Absolute Positioning has the posistion based on the web page */
+    background-color: greenyellow;
+    position: absolute;
+}
+
+#redBox
+{
+    /* Relative positioning has the position based on where it is in the code */
+    position: relative;
+    background-color: red;
+    top: 200px;
+    left: 300px;
+}
+
+#blueBox
+{
+    /* works like absolute but stays on the screen no matter what */
+    position: fixed;
+    background-color: blue;
+    width: 20px;
+    height: 50px;
+}
+
+#yellowBox
+{
+    /* */
+    position: sticky;
+    background-color: yellow;
+}
+
+/* Box Models */
+body
+{
+    background-color: lightblue;
+}
+
+.box
+{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: gray;
+
+    border: 3px solid yellow;
+    margin: 10px;
+}
