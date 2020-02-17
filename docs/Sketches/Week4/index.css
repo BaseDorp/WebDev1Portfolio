@@ -1,0 +1,46 @@
+/* Element Selector
+only selects this one html element */
+h1
+{
+    color: aqua;
+    background-color: orange;
+    font-size: 3em;
+}
+
+/* ID Selector 
+There can only be 1 of that ID on that html page */
+#home-title
+{
+    text-align: center;
+}
+
+div
+{
+    width: 200px;
+    height: 200px;
+    border: 5px double blueviolet;
+    margin: 10px;
+}
+
+/* Class Selector */
+.purple
+{
+    background-color: purple;
+}
+
+.underline
+{
+    text-decoration: underline;
+    background-color: green;
+}
+
+/* Applies this to any p tags with class underline*/
+.underline > p
+{
+    background-color: lightcoral;
+}
+
+.red
+{
+    background-color: red;
+}
