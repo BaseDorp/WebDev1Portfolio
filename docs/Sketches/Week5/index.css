@@ -1,0 +1,114 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+h1
+{
+    text-align: center;
+    padding: 3px;
+}
+
+/* Transitions */
+.animBox
+{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    transition-property: background-color, top;
+    transition-duration: 1s;
+    /* https://cubic-bezier.com */
+    /*transition-timing-function: cubic-bezier(.68,.04,.94,.64);*/
+
+    animation: move-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.37,0,.64,.99);
+
+}
+
+.animBox:hover
+{
+    background-color: lightblue;
+    top: 35%;
+}
+
+.trigger
+{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 100px;
+    height: 50px;
+    background-color: darkcyan;
+    border-radius: 25%;
+}
+
+.trigger:hover > .animBox
+{
+    
+}
+
+/* Animations */
+@keyframes move-right
+{
+    0%  {left: 200px}
+    50% {left: 800px; background-color: crimson}
+    100% {left: 200px}
+}
+
+/* Wrappers */
+#wrapper
+{
+    background-color: palegreen;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    /* same thing as doing margin-top/bottom = 0 margin-left/right = auto */
+    margin: 0 auto;
+    /* flex-wrap:  wrap; */
+}
+
+#bot_wrapper
+{
+
+}
+
+.box
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+    
+}
+
+.red
+{
+    background-color: red;
+}
+
+.blue
+{
+    background-color: blue;
+}
+
+.green
+{
+    background-color: green;
+}

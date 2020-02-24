@@ -1,0 +1,37 @@
+*
+{
+    background-color: green;
+}
+
+.loading-bar
+{
+    width: 600px;
+    height: 200px;
+    background-color: purple;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    transition-property: background-color, top;
+    transition-duration: 1s;
+    /* https://cubic-bezier.com */
+    /*transition-timing-function: cubic-bezier(.68,.04,.94,.64);*/
+
+    animation: move-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.37,0,.64,.99);
+}
+
+.loading-edge
+{
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes loading
+{
+    0%  {left: 200px}
+    100% {left: 200px}
+}
