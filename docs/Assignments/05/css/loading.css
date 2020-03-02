@@ -1,22 +1,23 @@
 .loading-bar
 {
-    width: 600px;
+    background-color: darkcyan;
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.loading-edge
+{
+    width: 200px;
     height: 200px;
     background-color: purple;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    position: relative;
 
     transition-property: background-color, top;
     transition-duration: 1s;
-    /* https://cubic-bezier.com */
-    /*transition-timing-function: cubic-bezier(.68,.04,.94,.64);*/
 
-    animation: move-right;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(.37,0,.64,.99);
+    animation: loading;
+    animation-duration: 10s;
 }
 
 .loading-edge
@@ -27,6 +28,11 @@
 
 @keyframes loading
 {
-    0%  {left: 200px}
-    100% {left: 200px}
+    0%  {left: 0%}
+    10% {left: 10%}
+    20% {left: 10%;}
+    50% {left: 50%;}
+    70% {left: 75%;} 
+    75% {left: 75%;}
+    100% {left: 96%;}
 }

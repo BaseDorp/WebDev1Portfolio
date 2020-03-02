@@ -6,7 +6,7 @@
     border-style: outset; 
 }
 
-a
+.NavBar a
 {
     color: rgb(132, 46, 230);
 }
@@ -35,4 +35,20 @@ body
     height: 50%;
     border: 3px yellow;
     opacity: 20%;
+}
+
+.block
+{
+    color: black;
+    width: 200px;
+    background-color: darkorchid;
+    border: 10px;
+    border-color: purple;
+    border-style: outset;
+    align-items: center;
+}
+
+.block a
+{
+    color:black;
 }

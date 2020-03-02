@@ -1,0 +1,10 @@
+.inline-block
+{
+    display: inline-flex;
+}
+
+img
+{
+    width: 20%;
+    height: 20%;
+}
