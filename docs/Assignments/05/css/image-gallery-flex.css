@@ -1,7 +1,9 @@
 .image-gallery
 {
-    align-content: center;
     display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 img

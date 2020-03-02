@@ -6,7 +6,7 @@
 
 header
 {
-    background-color: rgb(153, 67, 153);
+    background-color: purple;
 }
 
 #main-menu
@@ -17,7 +17,6 @@ header
 
 .menu-item
 {
-    color: white;
     list-style: none;
 }
 
