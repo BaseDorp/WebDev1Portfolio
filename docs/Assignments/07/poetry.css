@@ -1,0 +1,8 @@
+.box
+{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 1vw;
+    background-color: gray;
+    text-align: center;
+}
