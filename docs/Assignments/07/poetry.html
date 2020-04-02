@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Assignments/07/poetry.css">
+    
 </head>
 <body>
     
     <div class="box enter">
         <h1>Create Your Poem Here</h1>
-        
-        <label for="poem"></label>
-        <input type="text" name="poem" id="poem">
 
-        <label for=""></label>
-        <input type="button" value="Enter">
+        <input type="text" name="input" id="inputField" value="insert text here">
+
+        <input type="button" value="Enter" id="enterButton" onclick="AddLine()">
     </div>
+
     <div class="box result">
         <h1>Display Your Poem Here</h1>
+        <div id="poemResult"></div>
     </div>
 
+    <script src="/Assignments/07/poetry.js"></script>
 </body>
 </html>
